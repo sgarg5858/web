@@ -1,1 +1,35 @@
-<p>sign-up works!</p>
+<div class="signup-container">
+    <mat-card class="card">
+        
+        <form [formGroup]="signupForm" class="signup-form">
+
+            <mat-card-header>
+                <mat-card-title>
+                Welcome to Web
+                </mat-card-title>
+            </mat-card-header>
+
+            <mat-form-field class="signup-form__control">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+              </mat-form-field>
+
+              <mat-form-field class="signup-form__control">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" placeholder="Password">
+              </mat-form-field>
+
+              <mat-form-field class="signup-form__control">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password" matInput formControlName="confirmPassword" placeholder="Confirm Password">
+              </mat-form-field>
+
+              <button 
+              mat-raised-button 
+              class="signup-form__button"
+              >
+                Sign up
+              </button>
+        </form>
+    </mat-card>
+</div>

@@ -1,0 +1,16 @@
+.signup-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+mat-card{
+    box-shadow: 2px 2px 1px lightgrey;
+}
+.signup-form{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
