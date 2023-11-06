@@ -7,7 +7,7 @@ describe('SignUpComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SignUpComponent],
+      declarations: [SignUpComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SignUpComponent);
@@ -15,7 +15,9 @@ describe('SignUpComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should have 3 controls userEmail,userPassword,userPassword ', () => {
+    expect(component.signupForm.controls).toContain('userEmail');
+    expect(component.signupForm.controls).toContain('userPassword');
+    expect(component.signupForm.controls).toContain('userPassword');
   });
 });
